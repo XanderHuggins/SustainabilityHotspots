@@ -3,7 +3,7 @@ Code repo for the manuscript: "Sustainability hotspots of changing global freshw
 
 
 **In Preprocessing folder:** <br>
-*(Required to be executed before performing the core scripts)* <br>
+*(Required to be executed before the core scripts)* <br>
 `Dim_data_res_harmonize.r` harmonizes all data input to 0.5 degrees. <br> 
 `GPCC_annualsums.r` calculates annual precipitation over 1985-2014 using GPCC data. <br>
 `GRACE_csv_convert.r` takes Rodell et al. (2018) source data and converts to raster in WGS84. <br>
@@ -21,6 +21,7 @@ These include: |
 `hotspot_id_smoother` post-processes sustainability hotspots using two filters. |
 `WGS84_areaRaster` returns a raster with grid cell values representing WGS84 grid cell areas (up to 2.5 minute resolution). |
 <br>
+
 `Dimensions.r` derives the population, agricultural, economic, and environmental presence indicators, and multiplies each by the trend severity indicator to derive each dimension's hotspot indicator. <br>
 `DimHistograms.r` plots histograms of population count, crop calories, GDP at PPP, and water sensitive environment surface area agaist the relative water availability treds. <br>
 `Hotspots.r` derives the inidivudal and overall sustainability hotspots based on analytical hierarchy process-derived weightings. <br>
