@@ -6,7 +6,7 @@ import os
 st.set_page_config(layout = 'wide')
 
 # Get image location
-img_loc = os.getcwd() + 'streamlit/WebApp_legend.png'
+img_loc = os.getcwd() + '/streamlit/WebApp_legend.png'
 
 
 # Write header
