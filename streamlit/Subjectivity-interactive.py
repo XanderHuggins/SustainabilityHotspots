@@ -8,9 +8,8 @@ st.set_page_config(layout = 'wide')
 # Get image location
 img_loc = os.getcwd() + '/streamlit/WebApp_legend.png'
 
-
 # Write header
-st.write(''' 
+st.markdown(''' 
          *Interactive results*  
          # Hotspots of social and ecological impacts from freshwater stress and storage loss 
          **Huggins et al.** (submitted, 2021). Link to preprint to come.
@@ -19,7 +18,10 @@ st.write('''
          
          This site allows you to explore the sensitivitiy of the social-ecological vulnerability hotspot reuslts to subjective aspects of the study's methodology. Select from the alternative methodological configurations below, and see how the hotspot results change in response. 
          
-         ''')
+         <font style='font-size:12px' color='orange'> Note to Firefox users: you will need to interact with the dropdown menu below for results to appear. </font>
+         
+         ''', 
+         unsafe_allow_html=True)
 
 # Interactive map
 components.iframe('https://xanderhuggins.shinyapps.io/Hotspot-web-app/?_ga=2.195577964.1941895401.1619383215-1450163622.1619383215',
