@@ -1,12 +1,12 @@
 import streamlit as st
 import streamlit.components.v1 as components
-# import os 
+import os 
 
 # Set configuration
 st.set_page_config(layout = 'wide')
 
 # Get image location
-img_loc = 'WebApp_legend.png'
+img_loc = os.getcwd() + 'streamlit/WebApp_legend.png'
 
 
 # Write header
